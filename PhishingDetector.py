@@ -1,3 +1,12 @@
+# Phishing URL Detecting Tool -- Created by: James Haskell
+# Version 1.5 -- Last Updated Dec. 2019
+# -------------------------------------------------------------------------
+# This application uses a dataset of simulated URLs that are phishing, suspicious, or legitimate.
+# A decision tree classifier is used to create a trained model to predict whether an inputted URL
+# is phishing, suspicious, or legitimate.
+
+# *****************STILL A WORK IN PROGRESS***************
+
 import pandas as pd
 import numpy as np
 from sklearn import model_selection
@@ -28,7 +37,7 @@ names = ['having_IP_Address', 'URL_Length', 'Shortining_Service',
 #WORK ON:
 #web traffic
 
-#TRY TO ADD:
+#TO ADD:
 #Page Rank, Google index, links pointing to page
 
 data = pd.read_csv("./TrainingSet.csv", header=None, names=names)
